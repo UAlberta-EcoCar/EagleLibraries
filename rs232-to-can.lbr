@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -58,6 +58,34 @@
 <library>
 <packages>
 <package name="RS232-TO-CAN-CONVERTER">
+<wire x1="0" y1="0" x2="50" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="50" width="0.127" layer="21"/>
+<wire x1="0" y1="50" x2="50" y2="50" width="0.127" layer="21"/>
+<wire x1="50" y1="0" x2="50" y2="50" width="0.127" layer="21"/>
+<pad name="GND" x="46.863" y="3.3655" drill="0.8"/>
+<pad name="CTS" x="46.863" y="5.9055" drill="0.8"/>
+<pad name="VCC" x="46.863" y="8.4455" drill="0.8"/>
+<pad name="RXI" x="46.863" y="10.9855" drill="0.8"/>
+<pad name="TX0" x="46.863" y="13.5255" drill="0.8"/>
+<pad name="VIN" x="47.498" y="24.9555" drill="0.8"/>
+<pad name="5V" x="47.498" y="27.4955" drill="0.8"/>
+<pad name="SDA" x="47.498" y="30.0355" drill="0.8"/>
+<pad name="SCL" x="47.498" y="32.5755" drill="0.8"/>
+<pad name="GND_" x="47.498" y="35.1155" drill="0.8"/>
+<pad name="DTR" x="46.863" y="16.0655" drill="0.8"/>
+<text x="41.91" y="2.54" size="1.27" layer="21">GND</text>
+<text x="41.91" y="5.08" size="1.27" layer="21">CTS</text>
+<text x="41.91" y="7.62" size="1.27" layer="21">VCC</text>
+<text x="41.91" y="10.16" size="1.27" layer="21">RXI</text>
+<text x="41.91" y="12.7" size="1.27" layer="21">TX0</text>
+<text x="41.91" y="15.24" size="1.27" layer="21">DTR</text>
+<text x="41.91" y="24.13" size="1.27" layer="21">VIN</text>
+<text x="41.91" y="26.67" size="1.27" layer="21">5V</text>
+<text x="41.91" y="29.21" size="1.27" layer="21">SDA</text>
+<text x="41.91" y="31.75" size="1.27" layer="21">SCL</text>
+<text x="41.91" y="34.29" size="1.27" layer="21">GND</text>
+<text x="16.51" y="12.7" size="1.27" layer="21" rot="R90">RS232-TO-CAN-CONVERTER</text>
+<text x="20.32" y="12.7" size="1.27" layer="21" rot="R90">Double Check This Pinout</text>
 </package>
 </packages>
 <symbols>
@@ -82,6 +110,31 @@
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="RS232-TO-CAN-CONVERTER">
+<gates>
+<gate name="G$1" symbol="RS232-TO-CAN-CONVERTER" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="RS232-TO-CAN-CONVERTER">
+<connects>
+<connect gate="G$1" pin="+5V" pad="5V"/>
+<connect gate="G$1" pin="CTS" pad="CTS"/>
+<connect gate="G$1" pin="DTR" pad="DTR"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND_" pad="GND_"/>
+<connect gate="G$1" pin="RXI" pad="RXI"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="TX0" pad="TX0"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
