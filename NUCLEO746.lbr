@@ -38,12 +38,12 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -58,52 +58,114 @@
 <library>
 <packages>
 <package name="NUCLEO-F746ZG">
-<pad name="P$1" x="-24.13" y="24.770715625" drill="0.8" shape="square"/>
-<pad name="P$2" x="-21.59" y="24.770715625" drill="0.8"/>
-<pad name="P$3" x="-21.59" y="22.230715625" drill="0.8"/>
-<pad name="P$4" x="-24.13" y="22.230715625" drill="0.8"/>
-<pad name="P$5" x="-24.13" y="19.690715625" drill="0.8"/>
-<pad name="P$6" x="-21.59" y="19.690715625" drill="0.8"/>
-<pad name="P$7" x="-21.59" y="17.150715625" drill="0.8"/>
-<pad name="P$8" x="-24.13" y="17.150715625" drill="0.8"/>
-<pad name="P$9" x="-24.13" y="14.610715625" drill="0.8"/>
-<pad name="P$10" x="-21.59" y="14.610715625" drill="0.8"/>
-<pad name="P$11" x="-24.13" y="12.070715625" drill="0.8"/>
-<pad name="P$12" x="-21.59" y="12.070715625" drill="0.8"/>
-<pad name="P$13" x="-24.13" y="9.530715625" drill="0.8"/>
-<pad name="P$14" x="-21.59" y="9.530715625" drill="0.8"/>
-<pad name="P$15" x="-24.13" y="6.990715625" drill="0.8"/>
-<pad name="P$16" x="-21.59" y="6.990715625" drill="0.8"/>
-<pad name="P$17" x="-24.13" y="1.910715625" drill="0.8" shape="square"/>
+<pad name="NC1" x="-24.13" y="24.770715625" drill="0.8" shape="square"/>
+<pad name="PC_8" x="-21.59" y="24.770715625" drill="0.8"/>
+<pad name="PC_9" x="-21.59" y="22.230715625" drill="0.8"/>
+<pad name="IOREF" x="-24.13" y="22.230715625" drill="0.8"/>
+<pad name="NRST" x="-24.13" y="19.690715625" drill="0.8"/>
+<pad name="PC_10" x="-21.59" y="19.690715625" drill="0.8"/>
+<pad name="PC_11" x="-21.59" y="17.150715625" drill="0.8"/>
+<pad name="3V3" x="-24.13" y="17.150715625" drill="0.8"/>
+<pad name="5V" x="-24.13" y="14.610715625" drill="0.8"/>
+<pad name="PC_12" x="-21.59" y="14.610715625" drill="0.8"/>
+<pad name="GND1" x="-24.13" y="12.070715625" drill="0.8"/>
+<pad name="PD_2" x="-21.59" y="12.070715625" drill="0.8"/>
+<pad name="GND2" x="-24.13" y="9.530715625" drill="0.8"/>
+<pad name="PG_2" x="-21.59" y="9.530715625" drill="0.8"/>
+<pad name="VIN" x="-24.13" y="6.990715625" drill="0.8"/>
+<pad name="PG_3" x="-21.59" y="6.990715625" drill="0.8"/>
+<pad name="PA_3" x="-24.13" y="1.910715625" drill="0.8" shape="square"/>
 <pad name="P$18" x="-21.59" y="1.910715625" drill="0.8"/>
-<pad name="P$19" x="-24.13" y="-0.629284375" drill="0.8"/>
+<pad name="PC_0" x="-24.13" y="-0.629284375" drill="0.8"/>
 <pad name="P$20" x="-21.59" y="-0.629284375" drill="0.8"/>
-<pad name="P$21" x="-24.13" y="-3.169284375" drill="0.8"/>
+<pad name="PC_3" x="-24.13" y="-3.169284375" drill="0.8"/>
 <pad name="P$22" x="-21.59" y="-3.169284375" drill="0.8"/>
-<pad name="P$23" x="-24.13" y="-5.709284375" drill="0.8"/>
+<pad name="PF_3" x="-24.13" y="-5.709284375" drill="0.8"/>
 <pad name="P$24" x="-21.59" y="-5.709284375" drill="0.8" rot="R90"/>
-<pad name="P$25" x="-24.13" y="-8.249284375" drill="0.8"/>
+<pad name="PF_5" x="-24.13" y="-8.249284375" drill="0.8"/>
 <pad name="P$26" x="-21.59" y="-8.249284375" drill="0.8"/>
-<pad name="P$27" x="-24.13" y="-10.789284375" drill="0.8"/>
+<pad name="PF_10" x="-24.13" y="-10.789284375" drill="0.8"/>
 <pad name="P$28" x="-21.59" y="-10.789284375" drill="0.8"/>
-<pad name="P$29" x="-24.13" y="-13.329284375" drill="0.8"/>
+<pad name="NC2" x="-24.13" y="-13.329284375" drill="0.8"/>
 <pad name="P$30" x="-21.59" y="-13.329284375" drill="0.8"/>
-<pad name="P$31" x="-24.13" y="-15.869284375" drill="0.8"/>
+<pad name="PA_7" x="-24.13" y="-15.869284375" drill="0.8"/>
 <pad name="P$32" x="-21.59" y="-15.869284375" drill="0.8"/>
-<pad name="P$33" x="-24.13" y="-18.409284375" drill="0.8"/>
+<pad name="PF_2" x="-24.13" y="-18.409284375" drill="0.8"/>
 <pad name="P$34" x="-21.59" y="-18.409284375" drill="0.8"/>
-<pad name="P$35" x="-24.13" y="-20.949284375" drill="0.8"/>
+<pad name="PH_1" x="-24.13" y="-20.949284375" drill="0.8"/>
 <pad name="P$36" x="-21.59" y="-20.949284375" drill="0.8"/>
-<pad name="P$37" x="-24.13" y="-23.489284375" drill="0.8"/>
+<pad name="PH_0" x="-24.13" y="-23.489284375" drill="0.8"/>
 <pad name="P$38" x="-21.59" y="-23.489284375" drill="0.8"/>
-<pad name="P$39" x="-24.13" y="-26.029284375" drill="0.8"/>
+<pad name="GND11" x="-24.13" y="-26.029284375" drill="0.8"/>
 <pad name="P$40" x="-21.59" y="-26.029284375" drill="0.8"/>
-<pad name="P$41" x="-24.13" y="-28.569284375" drill="0.8"/>
+<pad name="PD_0" x="-24.13" y="-28.569284375" drill="0.8"/>
 <pad name="P$42" x="-21.59" y="-28.569284375" drill="0.8"/>
-<pad name="P$43" x="-24.13" y="-31.109284375" drill="0.8"/>
+<pad name="PD_1" x="-24.13" y="-31.109284375" drill="0.8"/>
 <pad name="P$44" x="-21.59" y="-31.109284375" drill="0.8"/>
-<pad name="P$45" x="-24.13" y="-33.649284375" drill="0.8"/>
+<pad name="PG_0" x="-24.13" y="-33.649284375" drill="0.8"/>
 <pad name="P$46" x="-21.59" y="-33.649284375" drill="0.8"/>
+<pad name="GND3" x="-31.75" y="62.8704625" drill="0.8" shape="square"/>
+<pad name="GND4" x="-31.75" y="60.3304625" drill="0.8"/>
+<pad name="GND6" x="31.75" y="60.3304625" drill="0.8"/>
+<pad name="GND5" x="31.75" y="62.8704625" drill="0.8" shape="square"/>
+<pad name="GND8" x="29.21" y="-53.969284375" drill="0.8"/>
+<pad name="GND7" x="31.75" y="-53.969284375" drill="0.8"/>
+<pad name="GND10" x="-31.75" y="-53.969284375" drill="0.8"/>
+<pad name="GND9" x="-29.21" y="-53.969284375" drill="0.8"/>
+<pad name="P$55" x="24.13" y="-13.329284375" drill="0.8"/>
+<pad name="P$56" x="21.59" y="-13.329284375" drill="0.8"/>
+<pad name="P$57" x="21.59" y="-15.869284375" drill="0.8"/>
+<pad name="P$58" x="21.59" y="-18.409284375" drill="0.8"/>
+<pad name="P$59" x="21.59" y="-20.949284375" drill="0.8"/>
+<pad name="P$60" x="21.59" y="-23.489284375" drill="0.8"/>
+<pad name="P$61" x="21.59" y="-26.029284375" drill="0.8"/>
+<pad name="P$62" x="21.59" y="-28.569284375" drill="0.8"/>
+<pad name="P$63" x="21.59" y="-31.109284375" drill="0.8"/>
+<pad name="P$64" x="21.59" y="-33.649284375" drill="0.8"/>
+<pad name="P$65" x="24.13" y="-15.869284375" drill="0.8"/>
+<pad name="P$66" x="24.13" y="-18.409284375" drill="0.8"/>
+<pad name="P$67" x="24.13" y="-20.949284375" drill="0.8"/>
+<pad name="P$68" x="24.13" y="-23.489284375" drill="0.8"/>
+<pad name="P$69" x="24.13" y="-26.029284375" drill="0.8"/>
+<pad name="P$70" x="24.13" y="-28.569284375" drill="0.8"/>
+<pad name="P$71" x="24.13" y="-31.109284375" drill="0.8"/>
+<pad name="P$72" x="24.13" y="-33.649284375" drill="0.8"/>
+<pad name="P$73" x="21.59" y="-10.789284375" drill="0.8"/>
+<pad name="P$74" x="24.13" y="-10.789284375" drill="0.8"/>
+<pad name="P$75" x="24.13" y="-8.249284375" drill="0.8"/>
+<pad name="P$76" x="21.59" y="-8.249284375" drill="0.8"/>
+<pad name="P$77" x="21.59" y="-5.709284375" drill="0.8"/>
+<pad name="P$78" x="24.13" y="-5.709284375" drill="0.8"/>
+<pad name="P$79" x="21.59" y="-3.169284375" drill="0.8"/>
+<pad name="P$80" x="24.13" y="-3.169284375" drill="0.8"/>
+<pad name="P$81" x="24.13" y="-0.629284375" drill="0.8"/>
+<pad name="P$82" x="21.59" y="-0.629284375" drill="0.8"/>
+<pad name="P$83" x="24.13" y="1.910715625" drill="0.8"/>
+<pad name="P$84" x="21.59" y="1.910715625" drill="0.8"/>
+<pad name="P$85" x="21.59" y="4.450715625" drill="0.8"/>
+<pad name="P$86" x="24.13" y="4.450715625" drill="0.8"/>
+<pad name="P$87" x="24.13" y="6.990715625" drill="0.8"/>
+<pad name="P$88" x="21.59" y="6.990715625" drill="0.8" shape="square"/>
+<pad name="P$89" x="21.59" y="34.930715625" drill="0.8" shape="square"/>
+<pad name="P$90" x="24.13" y="34.930715625" drill="0.8"/>
+<pad name="P$91" x="21.59" y="32.390715625" drill="0.8"/>
+<pad name="P$92" x="24.13" y="32.390715625" drill="0.8"/>
+<pad name="P$93" x="21.59" y="29.850715625" drill="0.8"/>
+<pad name="P$94" x="24.13" y="29.850715625" drill="0.8"/>
+<pad name="P$95" x="21.59" y="27.310715625" drill="0.8"/>
+<pad name="P$96" x="24.13" y="27.310715625" drill="0.8"/>
+<pad name="P$97" x="21.59" y="24.770715625" drill="0.8"/>
+<pad name="P$98" x="24.13" y="24.770715625" drill="0.8"/>
+<pad name="P$99" x="21.59" y="22.230715625" drill="0.8"/>
+<pad name="P$100" x="24.13" y="22.230715625" drill="0.8"/>
+<pad name="P$101" x="21.59" y="19.690715625" drill="0.8"/>
+<pad name="P$102" x="24.13" y="19.690715625" drill="0.8"/>
+<pad name="P$103" x="21.59" y="17.150715625" drill="0.8"/>
+<pad name="P$104" x="24.13" y="17.150715625" drill="0.8"/>
+<pad name="P$105" x="21.59" y="14.610715625" drill="0.8"/>
+<pad name="P$106" x="24.13" y="14.610715625" drill="0.8"/>
+<pad name="P$107" x="21.59" y="12.070715625" drill="0.8"/>
+<pad name="P$108" x="24.13" y="12.070715625" drill="0.8"/>
 </package>
 </packages>
 <symbols>
